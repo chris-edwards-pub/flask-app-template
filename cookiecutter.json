@@ -1,0 +1,17 @@
+{
+    "project_name": "Flask App",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_module": "app",
+    "project_description": "A Flask web application",
+    "db_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
+    "author_name": "Chris Edwards",
+    "author_email": "chris@edwards.pub",
+    "github_username": "chris-edwards-pub",
+    "aws_region": "us-east-1",
+    "python_version": "3.13",
+    "initial_admin_email": "admin@{{ cookiecutter.project_slug }}.local",
+    "initial_version": "0.1.0",
+    "_copy_without_render": [
+        ".github/workflows/*.yml"
+    ]
+}
